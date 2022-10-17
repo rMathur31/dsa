@@ -1,6 +1,6 @@
 public class LinkedList {
 
-  public static void main{
+  public static void main(String args[]){
     
     List list = new List();
     list.add("Data");
@@ -11,11 +11,11 @@ public class LinkedList {
 }
 
 
-public class Node {
-  private int data;
+class Node {
+  private String data;
   private Node next;
 
-  public Node(int data) {
+  public Node(String data) {
     this.data = data;
   }
   public void setData(String data){
@@ -33,7 +33,7 @@ public class Node {
 }
 
 
-public class List{
+class List{
   private Node head;
   private Node tail;
 
@@ -58,7 +58,7 @@ public class List{
   public void show() {
        Node temp = this.head;
        while(temp != null){
-        System.out.print(temp.getData);
+        System.out.print(temp.getData());
         temp = temp.getNext();
        }
   }
